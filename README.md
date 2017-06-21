@@ -7,7 +7,7 @@ Is availible at https://github.com/Kaczmpi/pokemons/blob/master/project/index.ht
 * Bootstrap - framework,
 * Less - stylesheet language,
 * jQuery - JS library,
-* BackstopJS - tool for regresion testing
+* BackstopJS - tool for regression testing,
 * Brackets - code editor.
 
 ## Some info
