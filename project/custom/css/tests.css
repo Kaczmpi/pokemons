@@ -1,0 +1,15 @@
+tr{
+    background: auto;
+}
+
+#cage{
+    margin: 0px;
+}
+
+th{
+    color: white;
+}
+
+.table-custom-side{
+    border: 5px solid black;
+}

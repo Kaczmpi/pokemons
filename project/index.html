@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokemon list</title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="custom/css/custom.css" rel="stylesheet">
+    <!-- CSS for tests add this and change tests.cssfile to see changes in the page structure -->
+<!--    <link href="custom/css/tests.css" rel="stylesheet"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+        //smooth scrolling
+$(document).ready(function(){
+    $(function() {
+		$('a').click(function() {
+            var href = $(this).attr("href");
+                $('html, body').animate({
+                scrollTop: $(href).offset().top-110
+                }, 1000);
+                return false;
+            });
+	   });
+});
+    </script>
+    
+  </head>
+  <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="images/mew.png" id="cage">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Main Page</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Go to Pokemon site<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="001.html">Bulbasaur</a></li>
+            <li><a href="002.html">Ivysaur</a></li>
+            <li><a href="003.html">Venusaur</a></li>
+            <li><a href="004.html">Charmander</a></li>
+            <li><a href="005.html">Charmeleon</a></li>
+            <li><a href="006.html">Charizard</a></li>
+            <li><a href="007.html">Squirtle</a></li>
+            <li><a href="008.html">Wartortle</a></li>
+            <li><a href="009.html">Blastoise</a></li>
+            <li><a href="010.html">Caterpie</a></li>
+            <li><a href="011.html">Metapod</a></li>
+            <li><a href="012.html">Butterfree</a></li>
+            <li><a href="013.html">Weedle</a></li>
+            <li><a href="014.html">Kakuna</a></li>
+            <li><a href="015.html">Bedrill</a></li>
+            <li><a href="016.html">Pidgey</a></li>
+            <li><a href="017.html">Pidgeotto</a></li>
+            <li><a href="018.html">Pidgeot</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  <div class="container container-custom" style="margin-top:50px">
+      <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10 text-center">
+              <h1>The Pokemon list</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore earum rerum labore, soluta, illo unde omnis pariatur exercitationem cum, velit qui nisi quo non laudantium iusto nemo alias! Corporis cupiditate culpa consequatur reprehenderit ducimus, fugit eaque pariatur ab earum incidunt nihil magnam amet, sapiente. Quas ullam optio vitae a.</p>
+          </div>
+          <div class="col-sm-1"></div>
+      </div>
+      <br><br>
+      <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-7">
+                <table class="table table-custom-list">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Appearance</th>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Overall</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1<a id="01"></a></td>
+                            <td><a href="001.html" class="imglink"><img src="images/001.jpg" class="rotation"></a></td>
+                            <td><a href="001.html">Bulbasaur</a></td>
+                            <td><p class='gr'>Grass</p><p class='poi'>Poison</p></td>
+                            <td>318</td>
+                        </tr>
+                        <tr>
+                            <td>2<a id="02"></a></td>
+                            <td><a href="002.html" class="imglink"><img src="images/002.jpg" class="rotation"></a></td>
+                            <td><a href="002.html">Ivysaur</a></td>
+                            <td><p class='gr'>Grass</p><p class='poi'>Poison</p></td>
+                            <td>405</td>
+                        </tr>
+                        <tr>
+                            <td>3<a id="03"></a></td>
+                            <td><a href="003.html" class="imglink"><img src="images/003.jpg" class="rotation"></a></td>
+                            <td><a href="003.html">Venusaur</a></td>
+                            <td><p class='gr'>Grass</p><p class='poi'>Poison</p></td>
+                            <td>525</td>
+                        </tr>
+                            <td>4<a id="04"></a></td>
+                            <td><a href="004.html" class="imglink"><img src="images/004.jpg" class="rotation"></a></td>
+                            <td><a href="004.html">Charmander</a></td>
+                            <td><p class='fir'>Fire</p></td>
+                            <td>309</td>
+                        <tr>
+                            <td>5<a id="05"></a></td>
+                            <td><a href="005.html" class="imglink"><img src="images/005.jpg" class="rotation"></a></td>
+                            <td><a href="005.html">Charmeleon</a></td>
+                            <td><p class='fir'>Fire</p></td>
+                            <td>405</td>
+                        </tr>
+                        <tr>
+                            <td>6<a id="06"></a></td>
+                            <td><a href="006.html" class="imglink"><img src="images/006.jpg" class="rotation"></a></td>
+                            <td><a href="006.html">Charizard</a></td>
+                            <td><p class='fir'>Fire</p><p class='fly'>Flying</p></td>
+                            <td>534</td>
+                        </tr>
+                        <tr>
+                            <td>7<a id="07"></a></td>
+                            <td><a href="007.html" class="imglink"><img src="images/007.jpg" class="rotation"></a></td>
+                            <td><a href="007.html">Squirtle</a></td>
+                            <td><p class='wat'>Water</p></td>
+                            <td>314</td>
+                        </tr>
+                        <tr>
+                            <td>8<a id="08"></a></td>
+                            <td><a href="008.html" class="imglink"><img src="images/008.jpg" class="rotation"></a></td>
+                            <td><a href="008.html">Wartortle</a></td>
+                            <td><p class='wat'>Water</p></td>
+                            <td>405</td>
+                        </tr>
+                        <tr>
+                            <td>9<a id="09"></a></td>
+                            <td><a href="009.html" class="imglink"><img src="images/009.jpg" class="rotation"></a></td>
+                            <td><a href="009.html">Blastoise</a></td>
+                            <td><p class='wat'>Water</p></td>
+                            <td>530</td>
+                        </tr>
+                        <tr>
+                            <td>10<a id="10"></a></td>
+                            <td><a href="010.html" class="imglink"><img src="images/010.jpg" class="rotation"></a></td>
+                            <td><a href="010.html">Caterpie</a></td>
+                            <td><p class='bug'>Bug</p></td>
+                            <td>195</td>
+                        </tr>
+                        <tr>
+                            <td>11<a id="11"></a></td>
+                            <td><a href="011.html" class="imglink"><img src="images/011.jpg" class="rotation"></a></td>
+                            <td><a href="011.html">Metapod</a></td>
+                            <td><p class='bug'>Bug</p></td>
+                            <td>205</td>
+                        </tr>
+                        <tr>
+                            <td>12<a id="12"></a></td>
+                            <td><a href="012.html" class="imglink"><img src="images/012.jpg" class="rotation"></a></td>
+                            <td><a href="012.html">Butterfree</a></td>
+                            <td><p class='bug'>Bug</p><p class='fly'>Flying</p></td>
+                            <td>395</td>
+                        </tr>
+                        <tr>
+                            <td>13<a id="17"></a></td>
+                            <td><a href="013.html" class="imglink"><img src="images/013.jpg" class="rotation"></a></td>
+                            <td><a href="013.html">Weedle</a></td>
+                            <td><p class='bug'>Bug</p><p class='poi'>Poison</p></td>
+                            <td>195</td>
+                        </tr>
+                        <tr>
+                            <td>14<a id="14"></a></td>
+                            <td><a href="014.html" class="imglink"><img src="images/014.jpg" class="rotation"></a></td>
+                            <td><a href="014.html">Kakuna</a></td>
+                            <td><p class='bug'>Bug</p><p class='poi'>Poison</p></td>
+                            <td>205</td>
+                        </tr>
+                        <tr>
+                            <td>15<a id="15"></a></td>
+                            <td><a href="015.html" class="imglink"><img src="images/015.jpg" class="rotation"></a></td>
+                            <td><a href="015.html">Bedrill</a></td>
+                            <td><p class='bug'>Bug</p><p class='poi'>Poison</p></td>
+                            <td>395</td>
+                        </tr>
+                        <tr>
+                            <td>16<a id="16"></a></td>
+                            <td><a href="016.html" class="imglink"><img src="images/016.jpg" class="rotation"></a></td>
+                            <td><a href="016.html">Pidgey</a></td>
+                            <td><p class='nor'>Normal</p><p class='fly'>Flying</p></td>
+                            <td>251</td>
+                        </tr>
+                        <tr>
+                            <td>17<a id="17"></a></td>
+                            <td><a href="017.html" class="imglink"><img src="images/017.jpg" class="rotation"></a></td>
+                            <td><a href="017.html">Pidgeotto</a></td>
+                            <td><p class='nor'>Normal</p><p class='fly'>Flying</p></td>
+                            <td>349</td>
+                        </tr>
+                        <tr>
+                            <td>18<a id="18"></a></td>
+                            <td><a href="018.html" class="imglink"><img src="images/018.jpg" class="rotation"></a></td>
+                            <td><a href="018.html">Pidgeot</a></td>
+                            <td><p class='nor'>Normal</p><p class='fly'>Flying</p></td>
+                            <td>479</td>
+                        </tr>
+                        <tr>
+                    </tbody>
+                </table>
+          </div>
+          <div class="col-sm-3">
+              <table class="table table-hover table-custom-side">
+                    <thead>
+                        <tr><td>Shortlist</td></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><a href="#01">Bulbasaur</a></td></tr>
+                        <tr><td><a href="#02">Ivysaur</a></td></tr>
+                        <tr><td><a href="#03">Venusaur</a></td></tr>
+                        <tr><td><a href="#04">Charmander</a></td></tr>
+                        <tr><td><a href="#05">Charmeleon</a></td></tr>
+                        <tr><td><a href="#06">Charizard</a></td></tr>
+                        <tr><td><a href="#07">Squirtle</a></td></tr>
+                        <tr><td><a href="#08">Wartortle</a></td></tr>
+                        <tr><td><a href="#09">Blastoise</a></td></tr>
+                        <tr><td><a href="#10">Caterpie</a></td></tr>
+                        <tr><td><a href="#11">Metapod</a></td></tr>
+                        <tr><td><a href="#12">Butterfree</a></td></tr>
+                        <tr><td><a href="#13">Weedle</a></td></tr>
+                        <tr><td><a href="#14">Kakuna</a></td></tr>
+                        <tr><td><a href="#15">Bedrill</a></td></tr>
+                        <tr><td><a href="#16">Pidgey</a></td></tr>
+                        <tr><td><a href="#17">Pidgeotto</a></td></tr>
+                        <tr><td><a href="#18">Pidgeot</a></td></tr>
+                    </tbody>
+                </table>
+          </div>
+          <div class="col-sm-1"></div>
+      </div>
+  </div>
+  <footer class="text-center">
+      <h3>The site was made by Piotr Kaczmarski</h3>
+  </footer>
+  </body>
+</html>

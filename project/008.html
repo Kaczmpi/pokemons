@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokemon list</title>
+    
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="custom/css/custom.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                $.get('http://pokeapi.co/api/v1/pokemon/8', function(pokemon){
+                    var data='<table class="table table-custom-list"><thead><tr><th>Id</th><th>Appearance</th><th>Name</th><th>Type</th><th>Speed</th><th>Attack</th><th>Defense</th><th>Height (ft)</th><th>Weight (lbs)</th></tr></thead><tbody><tr>';
+                    data+='<td>8</td>';
+                    data+='<td><a href="008.html" class="imglink"><img src="images/008.jpg" class="rotation"></a></td>'
+                    data+='<td>'+pokemon.name+'</td>';
+                    data+='<td>';
+                    for(var i=0;i<pokemon.types.length; i++){
+                        var string=pokemon.types[i].name
+                        var capitalized=string.charAt(0).toUpperCase()+string.substring(1);
+                        data+='<p>'+capitalized+'</p>';
+                    }
+                    data+= '</td><td>'+pokemon.speed+'</td>';
+					data+= '<td>'+pokemon.attack+'</td>';
+                    data+= '<td>'+pokemon.defense+'</td>';
+                    data+= '<td>'+pokemon.height+'</td>';
+                    data+= '<td>'+pokemon.weight+'</td>';
+                    data+= '</tr></tbody></table>';
+                    $('#frame8').html(data);
+                }, 'json');
+        })
+    </script>
+    
+  </head>
+  <body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="images/mew.png" id="cage">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Main Page</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Go to Pokemon site<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="001.html">Bulbasaur</a></li>
+            <li><a href="002.html">Ivysaur</a></li>
+            <li><a href="003.html">Venusaur</a></li>
+            <li><a href="004.html">Charmander</a></li>
+            <li><a href="005.html">Charmeleon</a></li>
+            <li><a href="006.html">Charizard</a></li>
+            <li><a href="007.html">Squirtle</a></li>
+            <li><a href="008.html">Wartortle</a></li>
+            <li><a href="009.html">Blastoise</a></li>
+            <li><a href="010.html">Caterpie</a></li>
+            <li><a href="011.html">Metapod</a></li>
+            <li><a href="012.html">Butterfree</a></li>
+            <li><a href="013.html">Weedle</a></li>
+            <li><a href="014.html">Kakuna</a></li>
+            <li><a href="015.html">Bedrill</a></li>
+            <li><a href="016.html">Pidgey</a></li>
+            <li><a href="017.html">Pidgeotto</a></li>
+            <li><a href="018.html">Pidgeot</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+  <div class="container container-custom" style="margin-top:50px">
+      <div class="row">
+          <div class="col-sm-1"></div>
+          <div class="col-sm-10 text-center">
+              <h1>The Pokemon list</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolore earum rerum labore, soluta, illo unde omnis pariatur exercitationem cum, velit qui nisi quo non laudantium iusto nemo alias! Corporis cupiditate culpa consequatur reprehenderit ducimus, fugit eaque pariatur ab earum incidunt nihil magnam amet, sapiente. Quas ullam optio vitae a.</p>
+          </div>
+          <div class="col-sm-1"></div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8">
+            
+                            <div id="frame8"></div>
+
+          </div>
+          <div class="col-sm-2"></div>
+      </div>
+      <br>
+      <div class="row">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-4 text-center evol">
+          <h3>Previous form</h3>
+          <a href="007.html">Squirtle</a>
+          <a href="007.html" class="imglink"><img src="images/007.jpg" class="rotation"></a>
+      </div>
+      <div class="col-sm-4 text-center evor">
+          <h3>Next form</h3>
+          <a href="009.html">Blastoise</a>
+          <a href="009.html" class="imglink"><img src="images/009.jpg" class="rotation"></a>
+      </div>
+      <div class="col-sm-2"></div>
+      </div>
+  </div>
+  <footer class="text-center">
+      <h3>The site was made by Piotr Kaczmarski</h3>
+  </footer>
+  </body>
+</html>

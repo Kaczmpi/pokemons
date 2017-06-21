@@ -1,0 +1,185 @@
+// variables
+@color1: #c3c3c3; //lightgrey
+@color2: #333333; //darkgrey
+@color3: #ff6060; //darkred
+@color4: #f0f0f0; //verylightgray
+
+@mainFont: Verdana, Geneva, sans-serif;
+@fsize1: 15px; //small
+@fsize2: 20px; //big
+
+.tocenter(){
+    text-align: center;
+    vertical-align: middle;
+}
+
+.shadows(){
+    -webkit-box-shadow: 2px 2px 2px 1px @color2;
+    -moz-box-shadow: 2px 2px 2px 1px @color2;
+    box-shadow: 2px 2px 2px 1px @color2;
+}
+
+.gr{
+    color: #06aa06;
+    font-weight: bold;
+}
+.poi{
+    color: #b503b5;
+    font-weight: bold;
+}
+.fir{
+    color: #ff3b3b;
+    font-weight: bold;
+}
+.fly{
+    color: #b1aeae;
+    font-weight: bold;
+}
+.wat{
+    color: #6d6dfa;
+    font-weight: bold;
+}
+.bug{
+    color: #4fef42;
+    font-weight: bold;
+}
+.nor{
+    color: grey;
+    font-weight: bold;
+}
+
+body{
+    background: -moz-linear-gradient(100deg, @color1, @color3);
+    background: -webkit-linear-gradient(100deg, @color1, @color3);
+    background: linear-gradient(100deg, @color1, @color3);
+    font-family: @mainFont;
+}
+
+.container-custom{
+    background: @color4;
+}
+
+.navbar-custom{
+    background: @color2;
+    color: @color4;
+    border-top: 1px solid @color3;
+    border-bottom: 1px solid @color3;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.table-custom-list{
+    thead{
+        border: 2px solid @color2;
+        background: @color1;
+        color: @color2;
+        tr{
+            th{
+                border: 0px;
+                font-size: @fsize1;
+                .tocenter();
+                padding-bottom: 10px;
+            }
+        }
+    }
+    tbody{
+        tr{
+            border: 0px;
+            td{
+                background: white;
+                border: 0px;
+                padding: 20px;
+                font-size: @fsize1;
+                .tocenter();
+                .shadows;
+                a{
+                    color: @color2;
+                }
+            }
+        }
+    }
+}
+
+.table-custom-side{
+    thead{
+        border: 2px solid @color2;
+        background: @color1;
+        color: @color2;
+        tr{
+            th{
+                border: 0px;
+                font-size: @fsize1;
+                .tocenter();
+                padding-bottom: 10px;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                a{
+                    color: @color2;
+                }
+            }
+        }
+    }
+}
+
+.rotation{
+    border-radius: 50%;
+    -moz-transition: -moz-transform 1s ease-in-out;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+    transition: transform 1s ease-in-out;
+}
+
+.imglink:hover .rotation{
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+#cage{
+    width:50px;
+    height: 50px;
+}
+
+#frame1{}
+#frame2{}
+#frame3{}
+#frame4{}
+#frame5{}
+#frame6{}
+#frame7{}
+#frame8{}
+#frame9{}
+#frame10{}
+#frame11{}
+#frame12{}
+#frame13{}
+#frame14{}
+#frame15{}
+#frame16{}
+#frame17{}
+#frame18{}
+
+a{
+    color: @color2;
+}
+a:hover{
+    color: @color2;
+}
+
+.evor{
+    background: white;
+    padding:15px;
+    border: 2px solid @color2;
+    margin-left: 2px;
+}
+.evol{
+    background: white;
+    padding:15px;
+    border: 2px solid @color2;
+    margin-right: 2px;
+}
