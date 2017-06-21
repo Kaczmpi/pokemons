@@ -2,25 +2,25 @@
 
 ## Test 1
 ### CSS changes
-tr{
-    background: auto;
-}
-#cage{
-    margin: 0px;
-}
-th{
-    color: white;
-}
-.table-custom-side{
-    border: 5px solid black;
+tr{<br />
+    background: auto;<br />
+}<br />
+#cage{<br />
+    margin: 0px;<br />
+}<br />
+th{<br />
+    color: white;<br />
+}<br />
+.table-custom-side{<br />
+    border: 5px solid black;<br />
 }
 
 ### Observed Output
--Changed color of th text to white
+-Changed color of th text to white<br />
 -Added a black border to all .table-custom-side class elements
 
 ### Estimated Output
--Changed color of th text to white
+-Changed color of th text to white<br />
 -Added a black border to all .table-custom-side class elements
 
 ### Correct?
